@@ -94,7 +94,7 @@ def print_state(game_state, turn):
     print(">>> Game is ended.")
 
     if game_state == 1:
-        print(">>> The First Move won in " * str(turn+1) + " turns.")
+        print(">>> The First Move won in " + str(turn+1) + " turns.")
 
     elif game_state == 2:
         print(">>> The Second Move won in " + str(turn+1) + " turns.")
