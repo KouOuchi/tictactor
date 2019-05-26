@@ -1,7 +1,6 @@
 import sys
 import re
 
-
 def print_table(table):
     #
     # Show Board
@@ -63,6 +62,17 @@ def input_command(table, turn):
                 = command_number
 
             break
+
+        print('===')
+        print(line)
+        print('===')
+        if line.rstrip() == 'Quit':
+            if turn % 2 == 0:
+                print(">>> The First Move quits. The Second Move won in " + str(turn + 1) + " turn.")
+            else:
+                print(">>> The Second Move quits. The First Move won in " + str(turn + 1) + " turn.")
+
+            sys.exit()
 
         print(">>> Input Error. Try again..")
 
