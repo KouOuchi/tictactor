@@ -63,9 +63,6 @@ def input_command(table, turn):
 
             break
 
-        print('===')
-        print(line)
-        print('===')
         if line.rstrip() == 'Quit':
             if turn % 2 == 0:
                 print(">>> The First Move quits. The Second Move won in " + str(turn + 1) + " turn.")
